@@ -13,7 +13,6 @@ public class TaxCalculation{
 		int marriedBaseMoneyRange_2 = 1600;
 		int marriedBaseMoneyRange_3 = 8800;
 		
-		
 		final double singlesTax = 0.10;
 		final double singlesTax_1 = 0.15;
 		final double singlesTax_2 = 0.25;
@@ -35,7 +34,6 @@ public class TaxCalculation{
 					taxAmount = ((incomeInput-32000)*singlesTax_2)+ singlesBaseMoneyRange_3;
 				}
 				
-				
 			System.out.println("Tax on your Income is: $" + taxAmount);
 			
 		}else{
@@ -51,7 +49,6 @@ public class TaxCalculation{
 				else{
 					taxAmount =( (marriedIncomeInput-64000)*marriedTax_2 )+ marriedBaseMoneyRange_3;
 				}
-		
 		
 			System.out.println("Tax on your Income is: $" + taxAmount);
 		}
