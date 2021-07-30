@@ -1,7 +1,14 @@
 import java.lang.Math;
 import java.util.Scanner;
 public class BinaryCalc{
+/*
 
+Java Program to convert:
+ (1) Binary to Decimal			(4) Decimal to Binary		(7) Decimal to Octal 		(10) Decimal to Hexa
+ (2) Octal to Decimal			(5) Octal to Binary		(8) Binary to Octal 		(11) Binary to Hexa
+ (3) Hexa to Decimal			(6) Hexa to Binary		(9) Hexa to Octal		(12) Octal to Hexa
+
+*/
 	public static void main(String[] args){
 		boolean start = true;
 		while(start){
@@ -140,10 +147,6 @@ public class BinaryCalc{
 					 
 					}
 
-
-
-
-
 				System.out.print("Would you like to run the program again? [Y/n]");
 				Scanner console = new Scanner(System.in);
 				String exit = console.nextLine();
@@ -154,12 +157,6 @@ public class BinaryCalc{
 				}
 		
 			 }
-		
-	
-
-	
-	
-	
 	}
 
 
