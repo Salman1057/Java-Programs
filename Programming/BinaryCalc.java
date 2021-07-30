@@ -154,10 +154,10 @@ Java Program to convert:
 					System.out.println("Thanks for using our Program. Would like to hear your suggestions. Reach me @ [<user-name>@<domain.com>]");
 					start = false;
 				
-				}
+			}
 		
-			 }
+		 }
+		
 	}
-
 
 }
