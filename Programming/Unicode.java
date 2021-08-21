@@ -6,7 +6,7 @@ public class Unicode {
 	 */
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 														
-
+ 
 		System.out.print("\nEnter the Chracter to Convert into Unicode =    ");							// Char Data Type to Unicode Conversion
 		char enteredChar = input.next().charAt(0);
 		int convertedUnicode = (int) enteredChar;
