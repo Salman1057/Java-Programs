@@ -53,7 +53,7 @@ public class TaxCalculation{
 			System.out.println("Tax on your Income is: $" + taxAmount);
 		}
 		
-	
+	input.close();
 	
 	}
 
