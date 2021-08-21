@@ -26,14 +26,14 @@ public class TwistedPrime {
 		}
 		System.out.println("\nIs the Number " + Num + " Prime?? \n\t\t" + resultNum);
 
-		while (Num != 0) {											 // Section to Reverse the Entered Number
+		while (Num != 0) {									// Section to Reverse the Entered Number
 			int remainder = Num % 10;
 			reverseNum = reverseNum * 10 + remainder;
 			Num /= 10;
 		}
 
 		int sqrtReverseNum = (int) Math.sqrt(reverseNum);
-		while (reverseNumIncrement <= sqrtReverseNum) { 			// Section to check the reverse number for Twisted Prime
+		while (reverseNumIncrement <= sqrtReverseNum) { 				// Section to check the reverse number for Twisted Prime
 			if (reverseNum % reverseNumIncrement == 0) {
 				resultReverseNum = false;
 			}
@@ -44,7 +44,7 @@ public class TwistedPrime {
 		System.out.println("Is the Number " + reverseNum + " Prime?? \n\t\t" + resultReverseNum);
 		read.close();
 
-		if (resultNum == true && resultReverseNum == true) {		// Section for the Decision of the Twisted Prime
+		if (resultNum == true && resultReverseNum == true) {				// Section for the Decision of the Twisted Prime
 			System.out.println("\nNumber " + Num + " is Twisted Prime.\n");
 		} else {
 			System.out.println("\nNumber " + Num + " is not Twisted Prime.\n");
