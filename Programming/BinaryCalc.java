@@ -5,8 +5,8 @@ public class BinaryCalc {
 	 * 
 	 * 	Java Program to convert: 
 	 * 		 	(1) Binary to Decimal			(4) Decimal to Binary		(7) Decimal to Octal 		(10) Decimal to Hexa
-	 *			(2) Octal to Decimal			(5) Octal to Binary			(8) Binary to Octal 		(11) Binary to Hexa
- 	 *			(3) Hexa to Decimal				(6) Hexa to Binary			(9) Hexa to Octal			(12) Octal to Hexa
+	 *			(2) Octal to Decimal			(5) Octal to Binary		(8) Binary to Octal 		(11) Binary to Hexa
+ 	 *			(3) Hexa to Decimal			(6) Hexa to Binary		(9) Hexa to Octal		(12) Octal to Hexa
 	 * 	using wrapper class of the Java.
 	 * 
 	 */
@@ -15,8 +15,7 @@ public class BinaryCalc {
 		while (start) {
 
 			System.out.println("\n\t\t\t\t\t Welcome to Binary Calculator\n\n Author: Muhammad Salman\t\t\t\t v1.1");
-			System.out.println(
-					"\n\t\t\t(1) Type 'btd' to convert BINARY TO DECIMAL, 'dtb' to convert DECIMAL TO BINARY. ");
+			System.out.println("\n\t\t\t(1) Type 'btd' to convert BINARY TO DECIMAL, 'dtb' to convert DECIMAL TO BINARY. ");
 			System.out.println("\n\t\t\t(2) Type 'bto' to convert BINARY TO OCTAL, 'otb' to convert OCTAL TO BINARY. ");
 			System.out.println("\n\t\t\t(3) Type 'bth' to convert BINARY TO HEXA, 'htb' to convert HEXA TO BINARY.");
 			System.out.println("\n\t\t\t(4) Type 'htd' to convert HEXA TO DECIMAL, 'dth' to convert DECIMAL TO HEXA.");
@@ -34,7 +33,6 @@ public class BinaryCalc {
 				int outBTD = Integer.parseInt(inputValue, 2);
 
 				System.out.println("Decimal of the Binary " + inputValue + " is " + outBTD + ".");
-
 			}
 
 			else if ("dtb".equals(inputType)) { // 1-b Decimal to Binary
@@ -42,7 +40,6 @@ public class BinaryCalc {
 				int DTB = input.nextInt();
 
 				System.out.println("Binary of the Decimal " + DTB + " is " + Integer.toBinaryString(DTB) + ".");
-
 			}
 
 			else if ("bto".equals(inputType)) { // 2-a Binary to Octal Conversion
@@ -51,7 +48,6 @@ public class BinaryCalc {
 				int BTO = Integer.parseInt(inputValue, 2);
 
 				System.out.println("Octal of the binary " + inputValue + " is " + Integer.toOctalString(BTO) + ".");
-
 			}
 
 			else if ("otb".equals(inputType)) { // 2-b Octal to Binary Conversion
@@ -60,7 +56,6 @@ public class BinaryCalc {
 				int OTB = Integer.parseInt(inputValue, 8);
 
 				System.out.println("Binary of the Octal " + inputValue + " is " + Integer.toBinaryString(OTB) + ".");
-
 			}
 
 			else if ("bth".equals(inputType)) { // 3-a Binary to Hexa Conversion
@@ -69,7 +64,6 @@ public class BinaryCalc {
 				int BTH = Integer.parseInt(inputValue, 2);
 
 				System.out.println("Hexadecimal of the binary " + inputValue + " is " + Integer.toHexString(BTH) + ".");
-
 			}
 
 			else if ("htb".equals(inputType)) { // 3-b Hexa to Binary Conversion
@@ -78,8 +72,6 @@ public class BinaryCalc {
 				int HTB = Integer.parseInt(inputValue, 16);
 
 				System.out.println("Binary of the Hexadecimal " + inputValue + " is " + Integer.toBinaryString(HTB) + ".");
-						
-
 			}
 
 			else if ("htd".equals(inputType)) { // 4-a Hexa to Decimal Conversion
@@ -88,7 +80,6 @@ public class BinaryCalc {
 				int HTD = Integer.parseInt(inputValue, 16);
 
 				System.out.println("Decimal of the Hexadecimal " + inputValue + " is " + HTD + ".");
-
 			}
 
 			else if ("dth".equals(inputType)) { // 4-b Decimal to Hexa Conversion
@@ -97,8 +88,6 @@ public class BinaryCalc {
 				int DTH = Integer.parseInt(inputValue, 10);
 
 				System.out.println("Hexadecimal of the Decimal " + inputValue + " is " + Integer.toHexString(DTH) + ".");
-						
-
 			}
 
 			else if ("hto".equals(inputType)) { // 5-a Hexadecimal to Octal Conversion
@@ -107,8 +96,6 @@ public class BinaryCalc {
 				int HTO = Integer.parseInt(inputValue, 16);
 
 				System.out.println("Octal of the Hexadecimal " + inputValue + " is " + Integer.toOctalString(HTO) + ".");
-						
-
 			}
 
 			else if ("oth".equals(inputType)) { // 5-b Octal to Hexadecimal Conversion
@@ -117,7 +104,6 @@ public class BinaryCalc {
 				int OTH = Integer.parseInt(inputValue, 8);
 
 				System.out.println("Hexadecimal of the Octal " + inputValue + " is " + Integer.toHexString(OTH) + ".");
-
 			}
 
 			else if ("otd".equals(inputType)) { // 6-a Octal to Decimal Conversion
@@ -126,7 +112,6 @@ public class BinaryCalc {
 				int OTD = Integer.parseInt(inputValue, 8);
 
 				System.out.println("Decimal of the Octal " + inputValue + " is " + OTD + ".");
-
 			}
 
 			else if ("dto".equals(inputType)) { // 6-b Decimal to Octal Conversion
@@ -135,15 +120,13 @@ public class BinaryCalc {
 				int DTO = Integer.parseInt(inputValue, 10);
 
 				System.out.println("Octal of the Decimal " + inputValue + " is " + Integer.toOctalString(DTO) + ".");
-
 			}
 
 			System.out.print("Would you like to run the program again? [Y/n]");
 			Scanner console = new Scanner(System.in);
 			String exit = console.nextLine();
 			if ("n".equals(exit)) {
-				System.out.println(
-						"Thanks for using our Program. Would like to hear your suggestions. Reach me @ [<user-name>@<domain.com>]");
+				System.out.println("Thanks for using our Program. Would like to hear your suggestions. Reach me @ [<user-name>@<domain.com>]");
 				start = false;
 				console.close();
 				input.close();
