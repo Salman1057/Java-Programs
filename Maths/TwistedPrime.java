@@ -6,7 +6,8 @@ public class TwistedPrime {
 	 * whose reverse is also a Prime Number. e.g 11 is prime and also twisted
 	 * prime.) First it checks the number for the prime number and then it reverses
 	 * the number and then again checks for the prime numbers , if it is prime then
-	 * it prints that entered number is twisted prime.
+	 * it prints that entered number is twisted prime. We can check for prime number 
+	 * by dividing the number upto the half of its square root.
 	 */
 	public static void main(String[] args) {
 		Scanner read = new Scanner(System.in);
@@ -17,7 +18,7 @@ public class TwistedPrime {
 		boolean resultNum = true, resultReverseNum = true;
 		int sqrtNum = (int) Math.sqrt(Num);
 
-		while (numIncrement <= sqrtNum) { // Section to check for the Prime Number
+		while (numIncrement <= sqrtNum) {							 // Section to check for the Prime Number
 			if (Num % numIncrement == 0) {
 				resultNum = false;
 			}
@@ -25,14 +26,14 @@ public class TwistedPrime {
 		}
 		System.out.println("\nIs the Number " + Num + " Prime?? \n\t\t" + resultNum);
 
-		while (Num != 0) { /// Section to Reverse the Entered Number
+		while (Num != 0) {											 // Section to Reverse the Entered Number
 			int remainder = Num % 10;
 			reverseNum = reverseNum * 10 + remainder;
 			Num /= 10;
 		}
 
 		int sqrtReverseNum = (int) Math.sqrt(reverseNum);
-		while (reverseNumIncrement <= sqrtReverseNum) { // Section to check the reverse number for Twisted Prime
+		while (reverseNumIncrement <= sqrtReverseNum) { 			// Section to check the reverse number for Twisted Prime
 			if (reverseNum % reverseNumIncrement == 0) {
 				resultReverseNum = false;
 			}
@@ -44,9 +45,9 @@ public class TwistedPrime {
 		read.close();
 
 		if (resultNum == true && resultReverseNum == true) {		// Section for the Decision of the Twisted Prime
-			System.out.println("Number " + Num + " is Twisted Prime");
+			System.out.println("\nNumber " + Num + " is Twisted Prime.\n");
 		} else {
-			System.out.println("Number " + Num + " is not Twisted Prime.");
+			System.out.println("\nNumber " + Num + " is not Twisted Prime.\n");
 		}
 
 	}
