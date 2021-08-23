@@ -13,7 +13,7 @@ public class BinaryCalculator {
         System.out.print("Enter the Second Binary:    ");
         String num1 = read.nextLine();
         boolean check = true;
-        while (check) {
+            String compNum1 = num.replace("1", "0").replace("0", "1");
             int binary1 = Integer.parseInt(num, 2);
             int binary2 = Integer.parseInt(num1, 2);
             int sum = binary1 + binary2;
@@ -21,16 +21,18 @@ public class BinaryCalculator {
             String binarySum = Integer.toBinaryString(sum);
             String binarySubt = Integer.toBinaryString(subt);
 
-            System.out.println("\n\t\t\t\tDecimal of the Binary " + num + " is : " + binary1);
+            String result1 = Integer.toBinaryString(binary1);
+            System.out.println("\n\t\t\t\tDecimal of the Binary " + num + " is : " + result1 );
+            System.out.println("\n Compliment of the 1st binary is " + compNum1 + "\n");
             System.out.println("\t\t\t\tDecimal of the Binary " + num1 + " is : " + binary2 + "\n");
             System.out.println("Sum of the Decimal Numbers is : " + (binary1 + binary2));
             System.out.println("Difference of the Decimal Numbers is : " + (binary1 - binary2));
             System.out.println("\n\t\t\t\tSum of the Binary : " + binarySum);
             System.out.println("\t\t\t\tSubtraction of the Binaries : " + binarySubt + "\n");
+            // System.out.println("\n\n\t\t\t 1's compliment of " + binary1 +" is " +
+            // revBinary1);
 
-            check = false;
 
-        }
 
         read.close();
     }
