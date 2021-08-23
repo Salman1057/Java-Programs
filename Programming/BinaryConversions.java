@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BinaryCalc {
+public class BinaryConversions {
 	/*
 	 * 
 	 * 	Java Program to convert: 
