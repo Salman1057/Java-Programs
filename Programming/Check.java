@@ -22,16 +22,17 @@ public class Check {
         System.out.println("\n\t\t\tDecimal of the Binary Number is  :  " + binary ); // Entered binary converted to Decimal
         String result = Integer.toBinaryString(b);      // 1's Compliment is convevrted into binary 
         System.out.println("1's compliment of " + a + " is [ " + result +" ] \n"); //Printing 1's compliment
-        System.out.println("Length is :  " + result.length());
+        //long z = 11111111111111111111111111111010l;
+        //System.out.println("Length is :  " + z.length());
 
-        int resultInIntDataType = Integer.parseInt(result,2);      // Converting 1's compliment into int data type to add 1 to make 2's compliment
+        long resultInIntDataType = Long.parseLong(result,2);      // Converting 1's compliment into int data type to add 1 to make 2's compliment
         String c = "1";                               // Declaring 1 as String  
-        int binary2 = Integer.parseInt(c,2);            // Converting 1 to Binary
+        long binary2 = Long.parseLong(c,2);            // Converting 1 to Binary
         System.out.println(binary2);                // Printing the Binary of the 1 
-        int  sum = resultInIntDataType + binary2;                   // Adding the Binaries of 1's compliment and 1 to make 2's compliment
+        long  sum = resultInIntDataType + binary2;                   // Adding the Binaries of 1's compliment and 1 to make 2's compliment
         String sec = String.valueOf(sum);           // Converting the int sum into String
-        int result3 = Integer.parseInt(sec,2);      // Converting the String to Int
-        String result1 = Integer.toBinaryString(result3);    // Converting the sum of int data type to Binary
+        long result3 = Long.parseLong(sec,2);      // Converting the String to Int
+        String result1 = Long.toBinaryString(result3);    // Converting the sum of int data type to Binary
         System.out.println("2's compliment of " + a + " is " + result1);         // Printing the 2's compliment
 
         read.close();
