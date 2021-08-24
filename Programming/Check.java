@@ -25,7 +25,7 @@ public class Check {
         //long z = 11111111111111111111111111111010l;
         //System.out.println("Length is :  " + z.length());
 
-        long resultInIntDataType = Long.parseLong(result,2);      // Converting 1's compliment into int data type to add 1 to make 2's compliment
+     /*   long resultInIntDataType = Long.parseLong(result,2);      // Converting 1's compliment into int data type to add 1 to make 2's compliment
         String c = "1";                               // Declaring 1 as String  
         long binary2 = Long.parseLong(c,2);            // Converting 1 to Binary
         System.out.println(binary2);                // Printing the Binary of the 1 
@@ -33,7 +33,7 @@ public class Check {
         String sec = String.valueOf(sum);           // Converting the int sum into String
         long result3 = Long.parseLong(sec,2);      // Converting the String to Int
         String result1 = Long.toBinaryString(result3);    // Converting the sum of int data type to Binary
-        System.out.println("2's compliment of " + a + " is " + result1);         // Printing the 2's compliment
+        System.out.println("2's compliment of " + a + " is " + result1);         // Printing the 2's compliment*/
 
         read.close();
     }

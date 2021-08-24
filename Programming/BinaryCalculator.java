@@ -12,7 +12,7 @@ public class BinaryCalculator {
         String num = read.nextLine();
         System.out.print("Enter the Second Binary:    ");
         String num1 = read.nextLine();
-        boolean check = true;
+        
             String compNum1 = num.replace("1", "0").replace("0", "1");
             int binary1 = Integer.parseInt(num, 2);
             int binary2 = Integer.parseInt(num1, 2);
