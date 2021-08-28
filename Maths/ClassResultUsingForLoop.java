@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Quiz {
+public class ClassResultUsingForLoop {
     /*
      * This program asks the user to enter the number of students, number of quizes
      * taken and then marks and print out the Sum of Obtd. Marks and the percantage of
