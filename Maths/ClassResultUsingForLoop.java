@@ -6,6 +6,11 @@ public class ClassResultUsingForLoop {
      * taken and then marks and print out the Sum of Obtd. Marks and the percantage
      * of individual students. It also prints the average marks of the class and
      * average percantage of the class.
+     * 
+     * 
+     * Note: At this time, program is accepting the input numbers from Math.random()
+     * and if you really wants to take numbers from user then do some tweaks on 
+     * Line 32.
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
