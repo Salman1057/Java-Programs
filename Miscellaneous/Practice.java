@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Practice {
     /*
-     * This program has 4 parts: 1- Program will keep asking for a number unitl you
-     * enter a negative number then it prints the sum of the entered numbers 
-     * 2-Program will be asking for Strings and then it prints them for confirmation purposes
-     * 3- Enter a number to print its factorials
-     * 4-Enter a base number first and then the power number.
+     * This program has 4 parts:
+     *        1- Program will keep asking for a number unitl you
+     *          enter a negative number then it prints the sum of the entered numbers 
+     *        2-Program will be asking for Strings and then it prints them for confirmation purposes
+     *        3- Enter a number to print its factorials
+     *        4-Enter a base number first and then the power number.
      * 
      */
     public static void main(String[] args) {
