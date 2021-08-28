@@ -12,28 +12,14 @@ public class Check {
 
     */                  
     
-    public static void main(String[] args) {
+    public static void main(String[] args) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
         Scanner read = new Scanner(System.in);
         System.out.print("\nEnter a number:   ");
-        String a = read.nextLine();             // Input taken from user is stored in the form of String
-        
-        int binary = Integer.parseInt(a,2);     // User-Input is being converted into int datatype
-        int b = ~binary;                           // 1's compliment using unary bitwise compliment operator
-        System.out.println("\n\t\t\tDecimal of the Binary Number is  :  " + binary ); // Entered binary converted to Decimal
-        String result = Integer.toBinaryString(b);      // 1's Compliment is convevrted into binary 
-        System.out.println("1's compliment of " + a + " is [ " + result +" ] \n"); //Printing 1's compliment
-        //long z = 11111111111111111111111111111010l;
-        //System.out.println("Length is :  " + z.length());
+        int a = read.nextInt();             // Input taken from user is stored in the form of String
 
-     /*   long resultInIntDataType = Long.parseLong(result,2);      // Converting 1's compliment into int data type to add 1 to make 2's compliment
-        String c = "1";                               // Declaring 1 as String  
-        long binary2 = Long.parseLong(c,2);            // Converting 1 to Binary
-        System.out.println(binary2);                // Printing the Binary of the 1 
-        long  sum = resultInIntDataType + binary2;                   // Adding the Binaries of 1's compliment and 1 to make 2's compliment
-        String sec = String.valueOf(sum);           // Converting the int sum into String
-        long result3 = Long.parseLong(sec,2);      // Converting the String to Int
-        String result1 = Long.toBinaryString(result3);    // Converting the sum of int data type to Binary
-        System.out.println("2's compliment of " + a + " is " + result1);         // Printing the 2's compliment*/
+        System.out.println("\'" + a);
+        
+
 
         read.close();
     }
