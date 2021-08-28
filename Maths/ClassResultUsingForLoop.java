@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class ClassResultUsingForLoop {
     /*
      * This program asks the user to enter the number of students, number of quizes
-     * taken and then marks and print out the Sum of Obtd. Marks and the percantage of
-     * individual students. It also prints the average marks of the class and average
-     * percantage of the class.
+     * taken and then marks and print out the Sum of Obtd. Marks and the percantage
+     * of individual students. It also prints the average marks of the class and
+     * average percantage of the class.
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class ClassResultUsingForLoop {
         System.out.print("Enter the Total Marks of Quiz : ");
         int marksOfQuizes = read.nextInt();
         int j;
-        int avgOfPercAllStud = 0, sumOfAllStud = 0 , avgObtdMarksOfAll = 0;
+        int avgOfPercAllStud = 0, sumOfAllStud = 0, avgObtdMarksOfAll = 0;
         double totalMarks = (numOfQuizes * marksOfQuizes);
 
         for (int i = 1; i <= numOfStuds; i++) {
@@ -33,11 +33,11 @@ public class ClassResultUsingForLoop {
                     marksOfQuiz = 0 + (int) (Math.random() * marksOfQuizes);
                 }
                 sumOfObtdMarks += marksOfQuiz;
-                sumOfAllStud += sumOfObtdMarks;
                 avgOfObtdMarksOfStuds = sumOfObtdMarks / j;
                 avgObtdMarksOfAll += avgOfObtdMarksOfStuds;
             }
             System.out.println("\n\t\t\t\tSum of Obtd. Marks by Students " + i + " is :  " + sumOfObtdMarks);
+            sumOfAllStud += sumOfObtdMarks;
             System.out.println("\t\t\t\tAverage Obtd. Marks of Student " + i + "  is :  " + avgOfObtdMarksOfStuds);
             double Percentage = Math.round(sumOfObtdMarks / totalMarks * 100);
             avgOfPercAllStud += Percentage;
@@ -45,8 +45,8 @@ public class ClassResultUsingForLoop {
         }
         System.out.println("\n\n\t\t\t\t******* CLASS RESULT REPORT *******\n");
         System.out.println("Sum of obtd Marks by All Students is : " + sumOfAllStud);
-        System.out.println("Total Marks are : " + (numOfStuds*(marksOfQuizes*numOfQuizes) ) );
-        System.out.println("Average Obtd. Marks out of " + (totalMarks)+ " is : " + avgObtdMarksOfAll/numOfStuds);
+        System.out.println("Total Marks are : " + (numOfStuds * (marksOfQuizes * numOfQuizes)));
+        System.out.println("Average Obtd. Marks out of " + (totalMarks) + " is : " + avgObtdMarksOfAll / numOfStuds);
         System.out.println("Average Percentage of the class is : " + (avgOfPercAllStud / numOfStuds) + "% .");
 
         read.close();
