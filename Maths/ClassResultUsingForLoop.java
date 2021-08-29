@@ -10,7 +10,7 @@ public class ClassResultUsingForLoop {
      * 
      * Note: At this time, program is accepting the input numbers from Math.random()
      * and if you really wants to take numbers from user then do some tweaks on 
-     * Line 32.
+     * Line 33.
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
@@ -49,8 +49,8 @@ public class ClassResultUsingForLoop {
             System.out.println("\t\t\t\t Percentage of Student " + i + "  is :  " + Percentage + "% .");
         }
         System.out.println("\n\n\t\t\t\t******* CLASS RESULT REPORT *******\n");
-        System.out.println("Sum of obtd Marks by All Students is : " + sumOfAllStud);
-        System.out.println("Total Marks are : " + (numOfStuds * (marksOfQuizes * numOfQuizes)));
+        System.out.println("Sum of obtd. Marks by All Students is : " + sumOfAllStud);
+        System.out.println("Total Marks of All Students are : " + (numOfStuds * (marksOfQuizes * numOfQuizes)));
         System.out.println("Average Obtd. Marks out of " + (totalMarks) + " is : " + avgObtdMarksOfAll / numOfStuds);
         System.out.println("Average Percentage of the class is : " + (avgOfPercAllStud / numOfStuds) + "% .");
 

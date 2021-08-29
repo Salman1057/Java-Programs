@@ -24,6 +24,7 @@ public class DoubleAmountDuration {
 		}
 		System.out.println("\n\tIt will take " + yrs + " years to double your Initial Deposit of " + in
 				+ " at an interest rate of 5%.");
+				read.close();
 	}
 
 }
