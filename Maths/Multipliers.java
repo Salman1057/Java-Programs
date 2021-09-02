@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class Multipliers {/*
-                           * This program takes input from user(Dividend) and then print its divisibles(Quotients) and divisors
-                           * and also checks for the prime number.
-                           */
+public class Multipliers {
+    /*
+    * This program takes input from user(Dividend) and then print its divisibles(Quotients) and divisors
+    * and also checks for the prime number.
+    */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         System.out.print("\n\t\t  Enter the Number:  ");
@@ -11,13 +12,14 @@ public class Multipliers {/*
         int tabNum = 2, tabMul = 1, tabMulCopy = 1, count = 0;
         boolean decision = true;
         System.out.print("\n\n");
+        
         while ((((tabNum * tabMul) < result)) || decision) {
             if ((tabNum * tabMul) >= result) {
                 if ((tabNum * tabMul) == result) {
                        System.out.println("Number " + tabNum + " is being checked against Number " + result + ". Following result has been found.");
                        System.out.println("\n\t\t\t" + tabNum + " x " + tabMul + " = " + result + "\n");
                         count++;
-                         if (tabNum >= (result / 2)) {
+                         if (tabNum >= (result / 2) || tabNum >= (result / 3)) {
                                decision = false;
                                System.out.println("\n\t\t\t\t\t !!!! PROGRAM ENDED !!!!\n\n");
                          }
@@ -25,14 +27,14 @@ public class Multipliers {/*
                 tabMul = tabMulCopy;
                 tabNum++;
             }
-            if (tabNum * tabMul >= result && count == 0) {
+
+            if (tabNum * tabMul >= result && count == 0) {  // This section checks the entered number for Prime Number.
                 System.out.print("\t\t Number " + result + " has been checked against the numbers till "
                         + (tabNum - 1) + ". No matches were found. " + result + " is a Prime Number.\n");
+                        decision = false;
+                        System.out.println("\n\t\t\t\t\t !!!! PROGRAM ENDED !!!!\n\n");
             }
-            if (tabNum * tabMul >= result) {
-                decision = false;
-                System.out.println("\n\t\t\t\t\t !!!! PROGRAM ENDED !!!!\n\n");
-            }
+           
             tabMul++;
         }
         read.close();
